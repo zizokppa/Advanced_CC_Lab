@@ -1,0 +1,21 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item {
+    width: calc(33.33% - 20px); /* Adjusted width with margin */
+    margin: 10px; /* Margin around each item */
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure images don't overflow */
+    position: relative; /* Establish relative positioning for absolute children */
+  }
+  
+  .item img {
+    width: 100%; /* Ensure image fills its parent container */
+    height: 100%; /* Ensure image fills its parent container */
+    object-fit: cover; /* Ensure image covers the container without stretching */
+  }
+  
