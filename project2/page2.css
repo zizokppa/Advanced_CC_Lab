@@ -1,21 +1,262 @@
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+body {
+  
+    position: relative; /* 使 body 成为定位上下文 */
+    height: 100px; /* 设置 body 的高度为视口的高度 */
+    margin: 0; /* 去除默认的 body 外边距 */
+    padding: 0; /* 去除默认的 body 内边距 */
+}
+
+img {
+    position: absolute; /* 设置图片绝对定位 */
+}
+
+img:nth-child(1) {
+    top: 600px;
+    left: 500px;
+}
+
+img:nth-child(2) {
+    top: 50px;
+    left: 500px;
+}
+
+img:nth-child(3) {
+    top: 620px;
+    left: 1400px;
+}
+
+img:nth-child(4) {
+    top: 320px;
+    left: 450px;
+}
+
+img:nth-child(5) {
+    top: 800px;
+    left: 400px;
+}
+
+img:nth-child(6) {
+    top: 600px;
+    left: 200px;
+}
+
+img:nth-child(7) {
+    top: 700px;
+    left: 900px;
+}
+
+img:nth-child(8) {
+    top: 520px;
+    left: 700px;
+}
+
+img:nth-child(9) {
+    top: 400px;
+    left: 600px;
+}
+
+img:nth-child(10) {
+    top: 10px;
+    left: 100px;
+}
+
+img:nth-child(11) {
+    top: 500px;
+    left: 1000px;
+}
+
+img:nth-child(12) {
+    top: 320px;
+    left: 100px;
+}
+
+img:nth-child(13) {
+    top: 520px;
+    left: 300px;
+}
+
+img:nth-child(14) {
+    top: 400px;
+    left: 800px;
+}
+
+img:nth-child(15) {
+    top: 250px;
+    left: 200px;
+}
+
+img:nth-child(16) {
+    top: 120px;
+    left: 200px;
+}
+
+img:nth-child(17) {
+    top: 600px;
+    left: 900px;
+}
+
+img:nth-child(18) {
+    top: 700px;
+    left: 500px;
+}
+
+img:nth-child(19) {
+    top: 720px;
+    left: 400px;
+}
+
+img:nth-child(20) {
+    top: 450px;
+    left: 600px;
+}
+/* 依此类推，为每张图片设置不同的top和left值，使它们随意排列 */
+body {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    position: absolute;
+    opacity: 0; /* 初始时设置图片透明 */
+    animation: fadeIn 1s ease forwards; /* 使用动画逐渐显现 */
+}
+
+/* 为每个图片设置不同的延迟 */
+.image-container img:nth-child(1) {
+    animation-delay: 0.5s;
+    filter: grayscale(100%)
+}
+
+.image-container img:nth-child(2) {
+    animation-delay: 1s;
+    filter:hue-rotate(340deg);;
+}
+
+.image-container img:nth-child(3) {
+    animation-delay: 1.5s;
+    filter:brightness(40%);
+}
+
+.image-container img:nth-child(4) {
+    animation-delay: 2s;
+    filter:hue-rotate(355deg);
+}
+
+.image-container img:nth-child(5) {
+    animation-delay: 2.5s;
+    filter:brightness(65%);
+}
+
+.image-container img:nth-child(6) {
+    animation-delay: 3s;
+    filter:hue-rotate(350deg);
+}
+
+.image-container img:nth-child(7) {
+    animation-delay: 3.5s;
+    filter:brightness(50%);
+}
+
+.image-container img:nth-child(8) {
+    animation-delay: 4s;
+    filter:brightness(70%);
+}
+
+.image-container img:nth-child(9) {
+    animation-delay: 4.5s;
+    filter:brightness(90%);
+}
+
+.image-container img:nth-child(10) {
+    animation-delay: 5s;
+    filter:brightness(30%);
+}
+
+.image-container img:nth-child(11) {
+    animation-delay: 5.5s;
+    filter:brightness(50%);
+}
+
+.image-container img:nth-child(12) {
+    animation-delay: 6s;
+    filter:brightness(70%);
+}
+
+.image-container img:nth-child(13) {
+    animation-delay: 6.5s;
+    filter:brightness(90%);
+}
+
+.image-container img:nth-child(14) {
+    animation-delay: 7s;
+    filter:brightness(20%);
+}
+
+.image-container img:nth-child(15) {
+    animation-delay: 7.5s;
+    filter:brightness(40%);
+}
+
+.image-container img:nth-child(16) {
+    animation-delay: 8s;
+    filter:brightness(60%);
+}
+
+.image-container img:nth-child(17) {
+    animation-delay: 8.5s;
+    filter:hue-rotate(348deg);
+}
+
+.image-container img:nth-child(18) {
+    animation-delay: 9s;
+    filter:brightness(30%);
+}
+
+.image-container img:nth-child(19) {
+    animation-delay: 9.5s;
+    filter:hue-rotate(330deg);
+}
+
+.image-container img:nth-child(20) {
+    animation-delay: 10s;
+    filter:hue-rotate(15deg);
+}
+
+.image-container a img {
+    position: absolute;
+    top: 3ch;
+    left:10ch;
+    transition: transform 0.3s ease; /* Add smooth transition effect */
   }
   
-  .item {
-    width: calc(33.33% - 20px); /* Adjusted width with margin */
-    margin: 10px; /* Margin around each item */
-    box-sizing: border-box;
-    overflow: hidden; /* Ensure images don't overflow */
-    position: relative; /* Establish relative positioning for absolute children */
+  .image-container a img:hover {
+    transform: scale(1.2); /* Increase the size of the image on hover */
   }
-  
-  .item img {
-    width: 100%; /* Ensure image fills its parent container */
-    height: 100%; /* Ensure image fills its parent container */
-    object-fit: cover; /* Ensure image covers the container without stretching */
-  }
-  
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+a {
+    position: absolute; /* 设置图片绝对定位 */
+    top: 3ch;
+    left: 160ch;
+}
+
+    a img:hover {
+        transform: scale(1.2); /* Increase the size of the image on hover */
+      }
+    
+
+

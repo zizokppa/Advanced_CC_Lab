@@ -1,1 +1,73 @@
+body
+{
+  background-color:white;
+	min-width: 800px;
+	min-height: 400px
+}
+.page-container {
+    overflow: hidden;
+    flex-wrap: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
 
+.content {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit:scale-down;
+}
+
+.grid-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    gap: 20px; /* Adjust the gap between images */
+}
+
+.grid-container img {
+    
+    width: 200px; /* Set a fixed width for each image */
+    height: auto; /* Maintain aspect ratio */
+    -webkit-transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+
+img
+{
+  width:20%;
+  float:left; 
+  margin:0;
+  -webkit-transition: all 1s
+}
+
+/*Filter styles*/
+.saturate {-webkit-filter: saturate(3);}
+.grayscale {-webkit-filter: grayscale(100%);}
+.contrast {-webkit-filter: contrast(160%);}
+.brightness {-webkit-filter: brightness(0.35);}
+.invert {-webkit-filter: invert(100%);}
+.sepia {-webkit-filter: sepia(100%);}
+.huerotate {-webkit-filter: hue-rotate(180deg);}
+
+
+/* preview the difference */
+img:hover{-webkit-filter:none;}
+
+
+  .container a img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+  }
+  
+  .container a img:hover {
+    transform: scale(1.1); /* Increase the size of the image on hover */
+  }
+
+ 

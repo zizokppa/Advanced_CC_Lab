@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Ensure full viewport height */
+}
+
+.container {
+    display: flex; /* Set container as flex container */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    width: 1200px; /* Set width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.container img {
+    margin: 40px; /* Adjust the margin between images */
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+a {
+    position: absolute; /* Set absolute positioning for the link */
+    top: 3ch;
+    right: 0;
+}
+
+a img:hover {
+    transform: scale(1.2); /* Increase the size of the image on hover */
+}
