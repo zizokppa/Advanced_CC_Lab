@@ -1,0 +1,128 @@
+body {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+    background-image: 
+      url("assets/•yellow icon.jpeg"),
+      url("assets/Coca Cola bottle PNG image image with transparent background.jpeg"),
+      url("assets/ִ       ིྀ   ㅤִ      𝗉ɑ𝗌𝗍𝖾𝗅𝗂𝗍𝗈      ֵ       ୧.jpeg"),
+      url("assets/_ (10).jpeg"),
+      url("assets/_ (11).jpeg"),
+      url("assets/☆★.jpeg"),
+      url("assets/Luxury fashion & independent designers _ SSENSE.jpeg"),
+      url("assets/≧▽≦﹒✿ Orange !cons 𓏴★.jpeg"),
+      url("assets/🌸˳ ˖_ ࣪ ִ་ ˖ ࣪.jpeg"),
+      url("assets/𝐷𝑒𝑐𝑜𝑟𝑎𝑐̧𝑎̃𝑜_.jpeg");
+    background-attachment: fixed;
+    background-size: 10%;
+    animation: alternateBackgrounds 10s infinite; /* 设置动画：名称、持续时间、循环次数 */
+  }
+  
+  @keyframes alternateBackgrounds {
+    0%, 10% {
+      background-image: url('assets/•yellow icon.jpeg');
+    }
+    10.1%, 20% {
+      background-image: url('assets/Coca Cola bottle PNG image image with transparent background.jpeg');
+    }
+    20.1%, 30% {
+      background-image: url("assets/ִ       ིྀ   ㅤִ      𝗉ɑ𝗌𝗍𝖾𝗅𝗂𝗍𝗈      ֵ       ୧.jpeg");
+    }
+    30.1%, 40% {
+      background-image: url('assets/_ (10).jpeg');
+    }
+    40.1%, 50% {
+      background-image: url('assets/_ (11).jpeg');
+    }
+    50.1%, 60% {
+      background-image: url('assets/☆★.jpeg');
+    }
+    60.1%, 70% {
+      background-image: url('assets/Luxury fashion & independent designers _ SSENSE.jpeg');
+    }
+    70.1%, 80% {
+      background-image: url('assets/≧▽≦﹒✿ Orange !cons 𓏴★.jpeg');
+    }
+    80.1%, 90% {
+      background-image: url('assets/🌸˳ ˖_ ࣪ ִ་ ˖ ࣪.jpeg');
+    }
+    90.1%, 100% {
+      background-image: url('assets/𝐷𝑒𝑐𝑜𝑟𝑎𝑐̧𝑎̃𝑜_.jpeg');
+    }
+  }
+  h1 {
+    text-align: center; /* 文字居中 */
+}
+
+h2 {
+    position: center;
+    text-align: center; /* 文字居中 */
+    color: yellow;
+    background-color:deeppink;
+    border: 2px solid #000000; /* 边框样式 */
+    border-radius: 0%; /* 边框圆角为10px，使边框呈现长方形 */
+    padding: 20px; /* 内边距 */
+    width: px; /* 宽度 */
+    margin: 0 auto; /* 居中显示 */
+    text-align: center; /* 文字水平居中 */
+    font-family: Arial, sans-serif; /* 更改字体 */
+    font-size: 48px;
+    font-style: italic;
+}
+
+/* 样式按钮容器 */
+#buttonContainer {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 水平居中对齐 */
+    margin-top: 400px; /* 上外边距 */
+}
+
+/* 样式左按钮 */
+#leftButton {
+    background-color: blue; /* 按钮背景色 */
+    color: yellow; /* 文本颜色 */
+    border: 1px solid #000000; /* 边框样式 */
+    padding: 10px 20px; /* 内边距 */
+    border-radius: 50%; /* 边框圆角 */
+    text-decoration: none; /* 去除默认链接样式 */
+    transition: background-color 0.3s, color 0.3s; /* 添加过渡效果 */
+    transform: scale(3); /* 放大按钮 5 倍 */
+    font-family: Arial, sans-serif; /* 字体 */
+    font-size: 16px; /* 字体大小 */
+    font-weight: bold; /* 字体粗细 */
+    font-style: italic;
+    margin-right: 200px;
+}
+
+/* 样式右按钮 */
+#rightButton {
+    background-color: blue; /* 按钮背景色 */
+    color: yellow; /* 文本颜色 */
+    border: 1px solid #000000; /* 边框样式 */
+    padding: 10px 20px; /* 内边距 */
+    border-radius: 50%; /* 边框圆角 */
+    text-decoration: none; /* 去除默认链接样式 */
+    transition: background-color 0.3s, color 0.3s; /* 添加过渡效果 */
+    transform: scale(3); /* 放大按钮 5 倍 */
+    font-family: Arial, sans-serif; /* 字体 */
+    font-size: 16px; /* 字体大小 */
+    font-weight: bold; /* 字体粗细 */
+    font-style: italic;
+    margin-left: 200px;
+}
+
+/* 悬停时按钮的样式 */
+#leftButton:hover, #rightButton:hover {
+    background-color: lightgreen; /* 按钮背景色 */
+    color: yellow; /* 文本颜色 */
+}
+
+/* 样式结果容器 */
+#resultContainer {
+    margin-top: 20px; /* 上外边距 */
+    text-align: center; /* 文字居中 */
+    display: none; /* 初始隐藏 */
+}
+
