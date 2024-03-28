@@ -17,7 +17,7 @@ body {
       url("assets/𝐷𝑒𝑐𝑜𝑟𝑎𝑐̧𝑎̃𝑜_.jpeg");
     background-attachment: fixed;
     background-size: 10%;
-    animation: alternateBackgrounds 10s infinite; /* 设置动画：名称、持续时间、循环次数 */
+    animation: alternateBackgrounds 5s infinite; /* 设置动画：名称、持续时间、循环次数 */
   }
   
   @keyframes alternateBackgrounds {
@@ -54,6 +54,10 @@ body {
   }
   h1 {
     text-align: center; /* 文字居中 */
+    position: absolute;
+    top:30%;
+    left:20%;
+
 }
 
 h2 {
@@ -61,7 +65,7 @@ h2 {
     text-align: center; /* 文字居中 */
     color: yellow;
     background-color:deeppink;
-    border: 2px solid #000000; /* 边框样式 */
+    border: 5px solid #000000; /* 边框样式 */
     border-radius: 0%; /* 边框圆角为10px，使边框呈现长方形 */
     padding: 20px; /* 内边距 */
     width: px; /* 宽度 */
@@ -83,7 +87,7 @@ h2 {
 #leftButton {
     background-color: blue; /* 按钮背景色 */
     color: yellow; /* 文本颜色 */
-    border: 1px solid #000000; /* 边框样式 */
+    border: 1.5px solid #000000; /* 边框样式 */
     padding: 10px 20px; /* 内边距 */
     border-radius: 50%; /* 边框圆角 */
     text-decoration: none; /* 去除默认链接样式 */
@@ -100,7 +104,7 @@ h2 {
 #rightButton {
     background-color: blue; /* 按钮背景色 */
     color: yellow; /* 文本颜色 */
-    border: 1px solid #000000; /* 边框样式 */
+    border: 1.5px solid #000000; /* 边框样式 */
     padding: 10px 20px; /* 内边距 */
     border-radius: 50%; /* 边框圆角 */
     text-decoration: none; /* 去除默认链接样式 */
@@ -117,6 +121,7 @@ h2 {
 #leftButton:hover, #rightButton:hover {
     background-color: lightgreen; /* 按钮背景色 */
     color: yellow; /* 文本颜色 */
+    border-radius: 50%;
 }
 
 /* 样式结果容器 */

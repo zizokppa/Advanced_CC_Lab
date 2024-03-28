@@ -23,7 +23,7 @@
       url("assets/𝐷𝑒𝑐𝑜𝑟𝑎𝑐̧𝑎̃𝑜_.jpeg");
     background-attachment: fixed;
     background-size: 10%;
-    animation: alternateBackgrounds 10s infinite; /* 设置动画：名称、持续时间、循环次数 */
+    animation: alternateBackgrounds 5s infinite; /* 设置动画：名称、持续时间、循环次数 */
   }
   
   @keyframes alternateBackgrounds {
@@ -95,7 +95,7 @@ h1 {
     text-align: center; /* 文字居中 */
     color: yellow;
     background-color:deeppink;
-    border: 2px solid #000000; /* 边框样式 */
+    border: 5px solid #000000; /* 边框样式 */
     border-radius: 50%; /* 边框圆角为10px，使边框呈现长方形 */
     padding: 20px; /* 内边距 */
     width: px; /* 宽度 */
