@@ -1,0 +1,53 @@
+body {
+    cursor: url('assets/dog-biscuit-milk-bone-dog-biscuit-dog-bone-a8d64b1f315a690a1b35245329a4746b.png'), auto;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: 100vh; /* Set the height of the background to the full viewport height */
+}
+
+img {
+    width: 500px; /* 设置图像宽度 */
+    position: absolute;
+    top:200px;
+left: 620px;
+    height: auto; /* 让浏览器根据宽度自动计算高度，以保持图像比例 */
+    display: block; /* 让图像居中显示 */
+    margin: 0 auto; /* 水平居中 */
+}
+
+a{
+    scale: 20%;
+    position: absolute;
+    top:700px;
+    right: 300px;
+
+}
+
+.content {
+    /* Styles for your content */
+    color: #fff; /* Example text color */
+    padding: 20px;
+}
+
+/* 隐藏默认的按钮样式 */
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  /* 设置按钮的图像样式 */
+  button img {
+    width: 500px; /* 设置图像宽度 */
+    position: absolute;
+    top:200px;
+left: 620px;
+    height: auto; /* 让浏览器根据宽度自动计算高度，以保持图像比例 */
+    display: block; /* 让图像居中显示 */
+    margin: 0 auto; /* 水平居中 */
+  }
+  
+ img:hover{
+    border: 10px dotted black;
+ }

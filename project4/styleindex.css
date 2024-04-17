@@ -1,0 +1,82 @@
+
+#externalLinkImg:hover {
+    border: 10px dotted black;
+}
+
+#page2LinkImg:hover{
+    border: 10px dotted black;
+}
+
+img {
+    width: 200px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.box {
+    margin: 0 auto; /* 设置左右外边距为 auto，实现水平居中 */
+    width: fit-content; /* 设置宽度为内容宽度 */
+}
+
+img {
+    width: 100px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.hidden {
+    visibility: hidden;
+}
+
+img:nth-child(1) {
+
+    top: 200px; /* 顶部 */
+    left: 180px; /* 左侧 */
+}
+img:nth-child(2) {
+    top: 250px; /* 顶部 */
+    left: 300px; /* 左侧 */
+}
+
+img:nth-child(3) {
+    width: 200px;
+    top: 300px; /* 顶部 */
+    left: 420px; /* 左侧 */
+}
+
+img:nth-child(4) {
+    top: 400px; /* 底部 */
+    left: 645px; /* 左侧 */
+}
+
+img:nth-child(5) {
+    width:90px;
+    top: 410px; /* 底部 */
+    left: 760px; /* 左侧 */
+}
+
+img:nth-child(6) {
+    top: 450px; /* 距离顶部50像素 */
+    left: 850px; /* 距离左侧50像素 */
+}
+
+img:nth-child(7) {
+    width:200px;
+    top: 550px; /* 距离顶部50像素 */
+    left: 950px; /* 距离左侧50像素 */
+}
+
+img:nth-child(8) {
+    top: 600px; /* 距离顶部50像素 */
+    left: 1180px; /* 距离左侧50像素 */
+}
+
+img:nth-child(9) {
+    height: 150px;
+    top: 580px; /* 距离顶部50像素 */
+    left: 1300px; /* 距离左侧50像素 */
+}
+
+/* 其他图像的位置自行调整 */
+
